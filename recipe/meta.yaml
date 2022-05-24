@@ -35,7 +35,6 @@ test:
     - pip
     - coverage
   imports:
-    - pytest_xprocess
     - xprocess
   commands:
     - pip check
