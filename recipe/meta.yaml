@@ -1,5 +1,5 @@
 {% set version = "0.23.0" %}
-{% set cov_fail_under = 90 %}
+{% set cov_fail_under = 99 %}
 
 package:
   name: pytest-xprocess
