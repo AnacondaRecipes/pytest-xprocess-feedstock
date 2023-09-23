@@ -1,11 +1,11 @@
-About pytest-xprocess
-=====================
+About pytest-xprocess-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-xprocess-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pytest-dev/pytest-xprocess
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-xprocess-feedstock/blob/main/LICENSE.txt)
 
 Summary: A pytest plugin for managing processes across test runs.
 
