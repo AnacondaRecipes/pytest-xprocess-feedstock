@@ -1,4 +1,4 @@
-{% set version = "0.23.0" %}
+{% set version = "1.0.0" %}
 {% set cov_fail_under = 99 %}
 
 package:
@@ -8,10 +8,10 @@ package:
 source:
   - folder: dist
     url: https://pypi.io/packages/source/p/pytest-xprocess/pytest-xprocess-{{ version }}.tar.gz
-    sha256: f8d4041a20a1c1ef1943054e4a3df7ac7b43e7f291f640f43c34e9dcc4b34dfa
+    sha256: 40944d0da8152224752ebc87c91187207db2c96e50ebe895f6ad5a7c1c44624a
   - folder: src
-    url: https://github.com/pytest-dev/pytest-xprocess/archive/refs/tags/{{ version }}.tar.gz
-    sha256: 51ff2e917f4716ac67c108ffcd4bd805a09de8a5b5bccf268565a0819b02169d
+    url: https://github.com/pytest-dev/pytest-xprocess/archive/refs/tags/v{{ version }}.tar.gz
+    sha256: 013617f6a31587179c0e8b1848562a859292cc8f0b506aa7a0ed9fa7e498ccab
 
 build:
   number: 0
@@ -21,12 +21,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
-    - setuptools-scm
+    - python >=3.9
+    - setuptools-scm >=6.2.3
   run:
     - psutil
     - pytest >=2.8
-    - python >=3.8
+    - python >=3.9
 
 test:
   source_files:
