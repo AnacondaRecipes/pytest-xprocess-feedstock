@@ -21,12 +21,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
-    - setuptools-scm
+    - python >=3.9
+    - setuptools-scm >=6.2.3
   run:
     - psutil
     - pytest >=2.8
-    - python >=3.8
+    - python >=3.9
 
 test:
   source_files:
