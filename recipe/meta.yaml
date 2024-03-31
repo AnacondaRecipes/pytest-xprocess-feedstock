@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 {% set cov_fail_under = 99 %}
 
 package:
@@ -8,10 +8,10 @@ package:
 source:
   - folder: dist
     url: https://pypi.io/packages/source/p/pytest-xprocess/pytest-xprocess-{{ version }}.tar.gz
-    sha256: 40944d0da8152224752ebc87c91187207db2c96e50ebe895f6ad5a7c1c44624a
+    sha256: 34f94e59a99c3f4bff08a7da54ad8592f6eb61f318e9f3d385ee0e55c4b12404
   - folder: src
-    url: https://github.com/pytest-dev/pytest-xprocess/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: 013617f6a31587179c0e8b1848562a859292cc8f0b506aa7a0ed9fa7e498ccab
+    url: https://github.com/pytest-dev/pytest-xprocess/archive/refs/tags/{{ version }}.tar.gz
+    sha256: cb2442cd768b25a61e9ff9f8b6401e8b02d249722348eebaf722ea6fde584823
 
 build:
   number: 0
