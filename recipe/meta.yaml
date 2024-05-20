@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: pytest-xprocess
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pytest-xprocess/pytest-xprocess-{{ version }}.tar.gz
-  sha256: 34f94e59a99c3f4bff08a7da54ad8592f6eb61f318e9f3d385ee0e55c4b12404
+  sha256: 15e270637586eabc56755ee5fcc81c48bdb46ba7ef7c0d5b1b64302d080cc60f
 
 build:
   number: 0
@@ -16,12 +16,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python >=3.8
     - setuptools-scm >=6.2.3
   run:
     - psutil
     - pytest >=2.8
-    - python >=3.9
+    - python >=3.8
 
 test:
   source_files:
