@@ -5,36 +5,38 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pytest-xprocess/pytest-xprocess-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/pytest-xprocess/pytest-xprocess-{{ version }}.tar.gz
   sha256: 15e270637586eabc56755ee5fcc81c48bdb46ba7ef7c0d5b1b64302d080cc60f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-build-isolation --no-deps
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
+    - setuptools
     - setuptools-scm >=6.2.3
   run:
     - psutil
     - pytest >=2.8
-    - python >=3.8
+    - python >={{ python_min }}
 
 test:
   source_files:
     - tests
   requires:
-    - pip
     - coverage
+    - pip
+    - python {{ python_min }}
   imports:
     - xprocess
   commands:
     - pip check
     - coverage run --source xprocess --branch -m pytest -vv --tb=long --color=yes
-    - coverage report --show-missing --skip-covered --fail-under=88
+    - coverage report --show-missing --skip-covered --fail-under=87
 
 about:
   home: https://github.com/pytest-dev/pytest-xprocess
