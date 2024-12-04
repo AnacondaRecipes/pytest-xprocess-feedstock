@@ -17,6 +17,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
     - setuptools-scm >=6.2.3
   run:
     - psutil
@@ -27,8 +28,8 @@ test:
   source_files:
     - tests
   requires:
-    - pip
     - coverage
+    - pip
     - python {{ python_min }}
   imports:
     - xprocess
