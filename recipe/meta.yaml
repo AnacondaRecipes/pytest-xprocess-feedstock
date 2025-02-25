@@ -47,6 +47,7 @@ about:
   description: |
       A pytest plugin for managing external processes across test runs.
   license: MIT
+  license_family: MIT
   license_file: LICENSE
   doc_url: https://pytest-xprocess.readthedocs.io
   dev_url: https://github.com/pytest-dev/pytest-xprocess
